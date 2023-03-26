@@ -1,0 +1,14 @@
+.article-card{
+    padding: 10px;
+    padding-top: 0;
+ }
+ 
+ .card-image > img{
+ 
+ height:250px;
+ }
+ 
+ .card-content>h2{
+ padding: 0;
+ }
+ 

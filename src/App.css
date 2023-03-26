@@ -12,9 +12,39 @@ img{
   display: flex;
   
 }
-
+.articles{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top:1rem;
+}
 .main-left{
   margin-right: 5px;
   max-width:75%;
  
+}
+
+.briefArticleCard{
+  border-right: 2px solid lightgray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.border-btm{
+  border-bottom: 1px solid lightgray;
+}
+
+.articleCard{
+  border-right: 2px solid lightgray ;
+}
+
+.author{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.news-teaser{
+  font-size: 1.2rem;
+  font-weight: 300;
 }
