@@ -3,12 +3,14 @@ import { useState } from "react";
 import news from "./helpers/news.json";
 import { Headline } from './components/headline/Headline';
 import { NewsArticle } from './components/card/NewsArticle';
+import { NewsTitles } from './components/titles/NewsTitles';
 
 const App=()=>{
   const [articleNews, setArticleNews] = useState(news.articles);
   const [noImage, setNoImage] = useState(false);
   const [noDescription, setNoDescription] = useState(false);
-
+  const remainingNewsArticles = [6, 7, 8, 9, 10];
+  
   // Function to trim the image path from json file
   const trimImagePath = (imagePath) => {
     if (imagePath.includes("/")) {
@@ -48,7 +50,18 @@ const App=()=>{
         </div>
       </div>
       <div className="main-right">
-      
+      <div className="news-right">
+          <NewsArticle
+            news={articleNews[1]}
+            trimImagePath={trimImagePath}
+            noDescription={() => setNoDescription(true)}
+          />
+        </div>
+        <div className="news-titles">
+          {remainingNewsArticles.map((item, i) => (
+            <NewsTitles key={i} news={articleNews[item]} />
+          ))}
+        </div>
       </div>
     </div>
   );
