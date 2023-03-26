@@ -18,3 +18,28 @@
     font-size: 3rem;
     font-weight: 400;
   }
+
+  @media screen  and (max-width:992px) {
+    .headline {
+      display: flex;
+      flex-direction: column-reverse;
+      max-height: 100vh;
+      border-right: none;
+      padding-right: 0px;
+    }
+    .headline-content {
+      max-width: 100%;
+      border-bottom: none;
+    }
+    .title > h1 {
+      font-size: 2rem;
+    }
+    
+  }
+  
+  @media screen and (min-width:992px)and (max-width:1220px){
+    .title > h1 {
+      font-size: 2rem;
+    }
+  }
+  

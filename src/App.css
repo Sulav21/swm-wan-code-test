@@ -53,3 +53,37 @@ img{
   font-size: 1.2rem;
   font-weight: 300;
 }
+
+@media screen and (max-width:992px){
+  .main{
+      padding: 10px;
+      min-height:100vh;
+      display: block;
+      
+  }
+  .main-left{
+      margin-right: 5px;
+      max-width:100%;
+     
+  }
+  .author{
+      font-size: 1rem;
+      font-weight: 400;
+  }
+  .author ::before{
+      content: '- ';
+  }
+  .news-teaser{
+      font-size: 1rem;
+      font-weight: 300;
+  }
+  img{
+      object-fit: cover;
+  }
+  .articles{
+      display: block;
+      
+  }
+  
+}
+  
